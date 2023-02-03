@@ -30,7 +30,7 @@ namespace Kolokwium.Services
                 tt = new TaskType { IdTaskType = request.TaskType.IdTaskType, Name = request.TaskType.Name };
                 await _context.TaskTypes.AddAsync(tt);
                 await _context.SaveChangesAsync();
-            }
+            } 
 
 
             Model.Task t = new Model.Task
